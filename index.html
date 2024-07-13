@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact form</title>
+</head>
+<body>
+<section class="contact">
+<h2>Contact Me!</h2>
+
+<form action="#">
+    <div class="input-box">
+        <div class="input-field field">
+            <input type="text" , class="item" , id="name" , placeholder="Full Name" , autocomplete="off">
+            <div class="error-text">Name cannot be Empty</div>
+        </div>
+        <div class="input-field field">
+            <input type="text" , class="item" , id="email" , placeholder="Email Address" , autocomplete="off">
+            <div class="error-text">Email cannot be Empty</div>
+        </div>
+    </div>
+    <div class="input-box">
+        <div class="input-field field">
+            <input type="text" , class="item" , id="phone" , placeholder="Phone Number" , autocomplete="off">
+            <div class="error-text">Phone number cannot be Empty</div>
+        </div>
+        <div class="input-field field">
+            <input type="text" , class="item" , id="Subject" , placeholder="Subject" , autocomplete="off">
+            <div class="error-text">Subject cannot be Empty</div>
+        </div>
+    </div>
+
+        <div class="textarea-field field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"></textarea>
+            <div class="error-text">Message cannot be Empty</div>
+        </div>
+
+        <button id="btn" type="submit">Send Message</button>
+   
+</form>
+</section>
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
